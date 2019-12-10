@@ -29,7 +29,7 @@ print(' [*] Waiting for logs. To exit press CTRL+C')
 def callback(ch, method, properties, body):
 
     string_body = str(body)
-
+    #print(f'{string_body}')
     stripped_message = string_body[2:]
 
     stripped_message2 = stripped_message[:-1]
